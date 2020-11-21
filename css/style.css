@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 0px #E5E9F2;
+          box-shadow: 0px 1px 0px #E5E9F2;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.logo {
+  color: #573F7B;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.logo img {
+  margin-right: 3%;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: capitalize;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #573F7B;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+}
+
+.nav-links a:hover {
+  opacity: 0.9;
+}
+
+.nav-links a:focus {
+  opacity: 0.7;
+}
+
+.nav-links a::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  top: 25px;
+  width: 0%;
+  height: 2px;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  opacity: 0;
+  background-color: #573F7B;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav-links li a .login {
+  position: absolute;
+  top: -4px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  background: #F5F5F5;
+  outline: none;
+  color: #573F7B;
+  font-family: 'Manrope', sans-serif;
+}
+
+.nav-links li a .login:hover {
+  opacity: 0.7;
+  background-color: #573F7B;
+  color: #fff;
+}
+
+.nav-links li a .signup {
+  position: absolute;
+  top: -4px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  left: 40px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  background: #573F7B;
+  outline: none;
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+}
+
+.nav-links li a .signup:hover {
+  opacity: 0.7;
+  background-color: #fff;
+  color: #573F7B;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger .line0 {
+  width: 30px;
+  height: 4px;
+  background-color: #573F7B;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger .line1 {
+  width: 30px;
+  height: 4px;
+  background-color: #573F7B;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger .line2 {
+  width: 30px;
+  height: 4px;
+  background-color: #573F7B;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  nav {
+    -webkit-box-shadow: 0px 0px 0px;
+            box-shadow: 0px 0px 0px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .logo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .nav-links li a .login {
+    position: relative;
+  }
+  .nav-links li a .signup {
+    left: 0;
+    position: relative;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 8vh;
+  background: #fff;
+  color: #573F7B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+@-webkit-keyframes navlinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navlinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line0 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line1 {
+  opacity: 0;
+}
+
+.toggle .line2 {
+  -webkit-transform: rotate(42deg) translate(-5px, -6px);
+          transform: rotate(42deg) translate(-5px, -6px);
+  margin-top: 5px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+/*# sourceMappingURL=style.css.map */
