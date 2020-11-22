@@ -190,6 +190,7 @@ nav {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    min-height: 5vh;
   }
   .nav-links {
     width: 50%;
@@ -203,6 +204,11 @@ nav {
   nav {
     -webkit-box-shadow: 0px 0px 0px;
             box-shadow: 0px 0px 0px;
+    min-height: 2vh;
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-links {
     display: none;
@@ -216,6 +222,7 @@ nav {
   .logo {
     font-size: 16px;
     font-weight: bold;
+    z-index: 1;
   }
   .nav-links li a .login {
     position: relative;
