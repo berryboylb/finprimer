@@ -162,6 +162,9 @@ nav {
 }
 
 @media screen and (max-width:1024px){
+    nav {
+        justify-content: space-evenly;
+    }
     .nav-links {
         width: 50%; 
         
@@ -196,10 +199,12 @@ nav {
 
     .nav-links li a .login {
         position: relative;
+        top: 0;
     }
 
     .nav-links li a .signup {
        left: 0;
+       top: 0;
        position: relative;
     }
 }
@@ -208,12 +213,13 @@ nav {
     transform: translate(0%);
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 90vh;
     top: 8vh;
     background:#fff;
     color: #573F7B;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     transition: transform 0.5s ease-in;
@@ -232,7 +238,7 @@ nav {
 }
 
 .toggle .line0 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .toggle .line1 {
@@ -240,7 +246,7 @@ nav {
 }
 
 .toggle .line2 {
-    transform: rotate(42deg) translate(-5px, -6px);
+    transform: rotate(42deg) translate(-6px, -6px);
     margin-top: 5px;
     
 }

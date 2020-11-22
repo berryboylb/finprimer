@@ -186,6 +186,11 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .nav-links {
     width: 50%;
   }
@@ -214,9 +219,11 @@ nav {
   }
   .nav-links li a .login {
     position: relative;
+    top: 0;
   }
   .nav-links li a .signup {
     left: 0;
+    top: 0;
     position: relative;
   }
 }
@@ -226,7 +233,7 @@ nav {
           transform: translate(0%);
   position: absolute;
   right: 0;
-  height: 92vh;
+  height: 90vh;
   top: 8vh;
   background: #fff;
   color: #573F7B;
@@ -237,6 +244,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -274,8 +283,8 @@ nav {
 }
 
 .toggle .line0 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .toggle .line1 {
@@ -283,8 +292,8 @@ nav {
 }
 
 .toggle .line2 {
-  -webkit-transform: rotate(42deg) translate(-5px, -6px);
-          transform: rotate(42deg) translate(-5px, -6px);
+  -webkit-transform: rotate(42deg) translate(-6px, -6px);
+          transform: rotate(42deg) translate(-6px, -6px);
   margin-top: 5px;
 }
 
