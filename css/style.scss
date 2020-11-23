@@ -218,7 +218,7 @@ nav {
     transform: translate(0%);
     position: absolute;
     right: 0;
-    height: 90vh;
+    height: 92vh;
     top: 8vh;
     background:#fff;
     color: #573F7B;
@@ -228,6 +228,7 @@ nav {
     align-items: center;
     width: 100%;
     transition: transform 0.5s ease-in;
+    z-index: 999999999 !important;
 }
 
 @keyframes navlinkFade {
@@ -264,13 +265,156 @@ nav {
     scroll-snap-type: y mandatory;
 }
 
-section {
+// section {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     width: 100%;
+//     height: 100vh ;
+//     scroll-snap-align: center;
+// }
+
+.first-sec {
+    padding: 5%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+    justify-content: space-between;
     height: 100vh ;
-    scroll-snap-align: center;
+    margin-bottom: 10%;
+        .first-sec-in {
+            
+            h1 {
+                font-size: 70px;
+                color: #201047;
+                margin-top: 15%;
+                font-family: Recoleta, 'Manrope', sans-serif;
+                font-weight: bold;
+                line-height: 1.5;
+                width: 125%;
+                // font-feature-settings: 'liga' off;
+            }
+
+            button {
+                background-color: #201047;
+                border-radius: 8px;
+                border: none;
+                color: #fff;
+                padding: 3% 6%;
+                margin-top: 3%;
+                font-size: 20px;
+                outline: none;
+            }
+
+            button:hover {
+                color: #201047;
+                background-color: #f5f5f5;
+                opacity: 0.8;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px #E5E9F2;
+            }
+        }
+
+        .second-sec-in {
+            .files-svg {
+                position: relative;
+                z-index: -1;
+            }
+
+            .dot-svg {
+                position: relative;
+                left: -20%;
+                z-index: -1;
+            }
+            .mobile {
+                display: none;
+            }
+        }
+}
+@media screen and (max-width:1024px){
+    .first-sec {
+        .first-sec-in {
+            h1 {
+                font-size: 64px;
+                width: 124%;
+            }
+        }
+        .second-sec-in {
+            .files-svg {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .first-sec {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        padding: 10%;
+        width: 100%;
+
+        .first-sec-in {
+                 h1 {
+                     align-self: center;
+                     font-size: 24px;
+                     width: 100%;
+                     font-weight: bold;
+                 }
+                 button {
+                     display: none;
+                 }
+        }
+    }
+
+    .second-sec-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        .files-svg {
+            margin-top: 10%;
+            height: 300px !important;
+            display: block;
+        }
+
+        .dot-svg {
+            position: absolute;
+            margin-left: -40%;
+            height: 50px;
+        }
+
+        .mobile {
+            background-color: #201047;
+            border-radius: 8px;
+            border: none;
+            color: #fff;
+            padding: 3% 7%;
+            margin-top: 4%;
+            font-size: 16px;
+            outline: none;
+            display: block !important;
+        }
+
+        .mobile:hover {
+            color: #201047;
+            background-color: #f5f5f5;
+            opacity: 0.8;
+            font-weight: 700;
+            text-shadow: 0px 1px 0px #E5E9F2;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width:320px) {
+    .second-sec-in {
+        .files-svg {
+            height: 250px !important;
+        }
+    }
 }
