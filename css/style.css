@@ -190,6 +190,7 @@ nav {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    min-height: 5vh;
   }
   .nav-links {
     width: 50%;
@@ -203,6 +204,11 @@ nav {
   nav {
     -webkit-box-shadow: 0px 0px 0px;
             box-shadow: 0px 0px 0px;
+    min-height: 2vh;
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-links {
     display: none;
@@ -216,6 +222,7 @@ nav {
   .logo {
     font-size: 16px;
     font-weight: bold;
+    z-index: 1;
   }
   .nav-links li a .login {
     position: relative;
@@ -233,7 +240,7 @@ nav {
           transform: translate(0%);
   position: absolute;
   right: 0;
-  height: 90vh;
+  height: 92vh;
   top: 8vh;
   background: #fff;
   color: #573F7B;
@@ -254,6 +261,7 @@ nav {
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  z-index: 999999999 !important;
 }
 
 @-webkit-keyframes navlinkFade {
@@ -306,23 +314,146 @@ nav {
       scroll-snap-type: y mandatory;
 }
 
-section {
+.first-sec {
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100vh;
-  scroll-snap-align: center;
+  margin-bottom: 10%;
+}
+
+.first-sec .first-sec-in h1 {
+  font-size: 70px;
+  color: #201047;
+  margin-top: 15%;
+  font-family: Recoleta, 'Manrope', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 125%;
+}
+
+.first-sec .first-sec-in button {
+  background-color: #201047;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  padding: 3% 6%;
+  margin-top: 3%;
+  font-size: 20px;
+  outline: none;
+}
+
+.first-sec .first-sec-in button:hover {
+  color: #201047;
+  background-color: #f5f5f5;
+  opacity: 0.8;
+  font-weight: 700;
+  text-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.first-sec .second-sec-in .files-svg {
+  position: relative;
+  z-index: -1;
+}
+
+.first-sec .second-sec-in .dot-svg {
+  position: relative;
+  left: -20%;
+  z-index: -1;
+}
+
+.first-sec .second-sec-in .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-sec .first-sec-in h1 {
+    font-size: 64px;
+    width: 124%;
+  }
+  .first-sec .second-sec-in .files-svg {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    padding: 10%;
+    width: 100%;
+  }
+  .first-sec .first-sec-in h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 24px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .first-sec .first-sec-in button {
+    display: none;
+  }
+  .second-sec-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .second-sec-in .files-svg {
+    margin-top: 10%;
+    height: 300px !important;
+    display: block;
+  }
+  .second-sec-in .dot-svg {
+    position: absolute;
+    margin-left: -40%;
+    height: 50px;
+  }
+  .second-sec-in .mobile {
+    background-color: #201047;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    padding: 3% 7%;
+    margin-top: 4%;
+    font-size: 16px;
+    outline: none;
+    display: block !important;
+  }
+  .second-sec-in .mobile:hover {
+    color: #201047;
+    background-color: #f5f5f5;
+    opacity: 0.8;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px #E5E9F2;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .second-sec-in .files-svg {
+    height: 250px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
