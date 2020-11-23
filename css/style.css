@@ -6,8 +6,14 @@
 }
 
 body {
-  overflow: hidden;
   height: 100vh;
+}
+
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("recoleta-regulardemo-webfont.woff2") format("woff2"), url("recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 nav {
@@ -25,7 +31,6 @@ nav {
   -webkit-box-shadow: 0px 1px 0px #E5E9F2;
           box-shadow: 0px 1px 0px #E5E9F2;
   position: relative;
-  scroll-snap-align: center;
 }
 
 .logo {
@@ -308,10 +313,6 @@ nav {
 .container {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 .first-sec {
@@ -323,14 +324,14 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .first-sec .first-sec-in h1 {
   font-size: 70px;
   color: #201047;
   margin-top: 15%;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-weight: bold;
   line-height: 1.5;
   width: 125%;
@@ -371,9 +372,12 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  .first-sec {
+    height: 40vh;
+  }
   .first-sec .first-sec-in h1 {
     font-size: 64px;
-    width: 124%;
+    width: 130%;
   }
   .first-sec .second-sec-in .files-svg {
     height: 400px;
@@ -394,6 +398,7 @@ nav {
     justify-items: center;
     padding: 10%;
     width: 100%;
+    height: 100vh;
   }
   .first-sec .first-sec-in h1 {
     -ms-flex-item-align: center;
@@ -441,6 +446,9 @@ nav {
     font-size: 16px;
     outline: none;
     display: block !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .second-sec-in .mobile:hover {
     color: #201047;
@@ -454,6 +462,482 @@ nav {
 @media screen and (max-width: 320px) {
   .second-sec-in .files-svg {
     height: 250px !important;
+  }
+}
+
+.second-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  padding: 5%;
+  height: 100vh;
+  scroll-snap-align: center;
+  margin-bottom: 10%;
+}
+
+.second-sec .second-sec-div2 {
+  padding: 2%;
+}
+
+.second-sec .second-sec-div2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8AF6D;
+  padding: 4%;
+  -webkit-box-shadow: 2px 4px 30px rgba(242, 120, 11, 0.3);
+          box-shadow: 2px 4px 30px rgba(242, 120, 11, 0.3);
+  border-radius: 15px 0px 15px 15px;
+}
+
+.second-sec .second-sec-div2 div h3 {
+  font-size: 32px;
+  color: #F2780B;
+  font-family: Recoleta, 'Manrope', sans-serif;
+  margin-bottom: 3%;
+}
+
+.second-sec .second-sec-div2 div p {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 3%;
+  font-family: Recoleta, 'Nunito sans', sans-serif;
+  color: #573F7B;
+}
+
+.second-sec .second-sec-div2 div button {
+  background: none;
+  margin-top: 2%;
+  padding: 2% 7%;
+  border: 1px solid #573F7B;
+  border-radius: 10px;
+  color: #573F7B;
+  font-size: 18px;
+}
+
+.second-sec .second-sec-div2 div button:hover {
+  background: #573F7B;
+  color: #fff;
+}
+
+.second-sec .flower-img {
+  position: relative;
+  top: -20%;
+  right: -90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .second-sec {
+    margin-top: 0;
+    height: 50vh;
+  }
+  .second-sec .flower-img {
+    height: 70px;
+    top: -8% !important;
+    right: -90% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .second-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 25% !important;
+    height: 100vh;
+  }
+  .second-sec .second-sec-div1 img {
+    height: 100% !important;
+    width: 100%;
+  }
+  .second-sec .second-sec-div2 div h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .second-sec .second-sec-div2 div p {
+    font-size: 12px;
+    margin-bottom: 1%;
+  }
+  .second-sec .second-sec-div2 div button {
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-left: 0;
+    border-radius: 5px;
+  }
+  .flower-img {
+    height: 70px;
+    top: -10% !important;
+    right: -94% !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .flower-img {
+    height: 70px;
+    top: -10% !important;
+    right: -86% !important;
+  }
+}
+
+.third-sec {
+  background: #fff;
+  padding: 5%;
+}
+
+.third-sec h2 {
+  text-align: center;
+  font-family: Recoleta, 'Manrope', sans-serif;
+  color: #201047;
+  font-size: 32px;
+  -webkit-font-feature-settings: 'liga' off;
+          font-feature-settings: 'liga' off;
+  margin-bottom: 5%;
+}
+
+.third-sec .third-sec-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.third-sec .third-sec-in .third-sec-in1 {
+  position: relative;
+  background: #573F7B;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  width: 20%;
+  height: 340px;
+}
+
+.third-sec .third-sec-in .third-sec-in1 .cap-svg {
+  margin-bottom: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in1 h3 {
+  font-family: Recoleta, 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+
+.third-sec .third-sec-in .third-sec-in1 p {
+  text-align: center;
+  font-family: matter, 'Nunito sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2%;
+  color: #FBC99D;
+  margin-top: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in1 .circle-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.third-sec .third-sec-in .third-sec-in1 a {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  color: #FAFAFA;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: matter, 'Nunito sans', sans-serif;
+}
+
+.third-sec .third-sec-in .third-sec-in1 a:hover {
+  opacity: 0.8;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.third-sec .third-sec-in .third-sec-in2 {
+  position: relative;
+  background: #573F7B;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  width: 20%;
+  height: 340px;
+}
+
+.third-sec .third-sec-in .third-sec-in2 .ring-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.third-sec .third-sec-in .third-sec-in2 .book-svg {
+  margin-bottom: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in2 h3 {
+  font-family: Recoleta, 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+
+.third-sec .third-sec-in .third-sec-in2 p {
+  text-align: center;
+  font-family: matter, 'Nunito sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2%;
+  color: #FBC99D;
+  margin-top: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in2 a {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  color: #FAFAFA;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: matter, 'Nunito sans', sans-serif;
+}
+
+.third-sec .third-sec-in .third-sec-in2 a:hover {
+  opacity: 0.8;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.third-sec .third-sec-in .third-sec-in3 {
+  position: relative;
+  background: #573F7B;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  width: 20%;
+  height: 340px;
+}
+
+.third-sec .third-sec-in .third-sec-in3 .invcircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.third-sec .third-sec-in .third-sec-in3 .chat-svg {
+  margin-bottom: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in3 h3 {
+  font-family: Recoleta, 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+
+.third-sec .third-sec-in .third-sec-in3 p {
+  text-align: center;
+  font-family: matter, 'Nunito sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2%;
+  color: #FBC99D;
+  margin-top: 5%;
+}
+
+.third-sec .third-sec-in .third-sec-in3 a {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  color: #FAFAFA;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: matter, 'Nunito sans', sans-serif;
+}
+
+.third-sec .third-sec-in .third-sec-in3 a:hover {
+  opacity: 0.8;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.third-sec .third-sec-in .third-sec-in4 {
+  position: relative;
+  background: #573F7B;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  width: 20%;
+  height: 340px;
+}
+
+.third-sec .third-sec-in .doc-svg {
+  margin-bottom: 5%;
+}
+
+.third-sec .third-sec-in h3 {
+  font-family: Recoleta, 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+
+.third-sec .third-sec-in p {
+  text-align: center;
+  font-family: matter, 'Nunito sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2%;
+  color: #FBC99D;
+  margin-top: 5%;
+}
+
+.third-sec .third-sec-in .inv-ring {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.third-sec .third-sec-in a {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  color: #FAFAFA;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: matter, 'Nunito sans', sans-serif;
+}
+
+.third-sec .third-sec-in a:hover {
+  opacity: 0.8;
+  font-size: large;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .third-sec .third-sec-in div {
+    width: 50%;
+  }
+  .third-sec .third-sec-in div h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .third-sec .third-sec-in div p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .third-sec {
+    padding: 10%;
+  }
+  .third-sec h2 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .third-sec .third-sec-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .third-sec .third-sec-in div {
+    width: 100% !important;
+    margin-bottom: 5%;
+  }
+  .third-sec .third-sec-in div h3 {
+    font-size: 16px;
+  }
+  .third-sec .third-sec-in div p {
+    font-size: 14px;
+  }
+  .third-sec .third-sec-in div a {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
