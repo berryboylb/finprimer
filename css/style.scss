@@ -8,15 +8,6 @@ body {
     height: 100vh;
 }
 
-@font-face {
-    font-family: 'recoletaregular_demo';
-    src: url('recoleta-regulardemo-webfont.woff2') format('woff2'),
-         url('recoleta-regulardemo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -181,9 +172,6 @@ nav {
 }
 
 @media screen and (max-width:768px) {
-    body {
-        overflow: hidden;
-    }
 
     nav {
         box-shadow: 0px 0px 0px;
@@ -290,7 +278,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100vh ;
-    margin-bottom: 15%;
+    // margin-bottom: 15%;
         .first-sec-in {
             
             h1 {
@@ -437,7 +425,7 @@ nav {
     padding: 5%;
     height: 100vh;
     scroll-snap-align: center;
-    margin-bottom: 10%;
+    //margin-bottom: 10%;
         .second-sec-div2 {
             padding: 2%;
 
@@ -496,7 +484,7 @@ nav {
         .flower-img {
             height: 70px;
             top: -8% !important;
-            right: -90% !important;
+            right: -86% !important;
         }
     }
 }
@@ -507,7 +495,7 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 25% !important;
+        margin-top: 10% !important;
         height: 100vh;
 
             .second-sec-div1 {
@@ -537,7 +525,7 @@ nav {
             }
     }
     .flower-img {
-        height: 70px;
+        height: 10px;
         top: -10% !important;
         right: -94% !important;
     }
@@ -550,6 +538,12 @@ nav {
         height: 70px;
         top: -10% !important;
         right: -86% !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .second-sec {
+        margin-top: 20% !important;
     }
 }
 
@@ -810,9 +804,12 @@ nav {
 
 @media screen and (max-width:1024px){
     .third-sec {
+        margin-top: 10%;
         .third-sec-in {
+            
             div {
                 width: 50%;
+                align-self: center;
                 h3 {
                     text-align: center;
                     font-size: 16px;
@@ -827,6 +824,11 @@ nav {
 
 @media screen and (max-width:768px)  {
     .third-sec {
+        margin-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 10%;
          h2 {
             font-weight: bold;
@@ -834,12 +836,15 @@ nav {
          }
         .third-sec-in {
             flex-direction: column;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
+            justify-items: center;
 
             div {
                 width: 100% !important;
                 margin-bottom: 5%;
+                align-self: center;
+                display: block;
 
                 h3 {
                     font-size: 16px;
@@ -850,6 +855,18 @@ nav {
                 a {
                     font-size: 14px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .third-sec {
+        margin-top: 10% !important;
+
+        .third-sec-in {
+            div {
+                margin-left: 3%;
             }
         }
     }
