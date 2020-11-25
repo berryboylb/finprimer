@@ -33,7 +33,7 @@ tl.from('nav', {y:-100, opacity: 0, ease: 'bounce',})
 
       gsap.from(".third-sec .third-sec-in div", {
         scrollTrigger: {trigger:".third-sec", toggleActions: "restart pause none none"}, // start the animation when ".box" enters the viewport (once)
-         ease: 'elastic', duration: 2, opacity: 0, scale: 2, stagger: 1.5
+         ease: 'elastic', duration: 2, opacity: 0, scale: 2, stagger: 1
       });
 
       gsap.from(".fourth-sec .fourth-sec-1", {

@@ -130,6 +130,7 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
+    z-index: 9;
 }
 
 
@@ -195,7 +196,7 @@ nav {
     .logo {
         font-size: 16px;
         font-weight: bold;
-        z-index: 1;
+        z-index: 5;
     }
 
     .nav-links li a .login {
@@ -224,6 +225,7 @@ nav {
     align-items: center;
     width: 100%;
     transition: transform 0.5s ease-in;
+    z-index: 4;
 }
 
 @keyframes navlinkFade {
@@ -272,76 +274,79 @@ nav {
 //     scroll-snap-align: center;
 // }
 
+.vj {
+    margin-top: 100vh;
+}
+
 .first-sec {
     padding: 5%;
     display: flex;
-    justify-content: space-between;
-    height: 100vh ;
-     margin-bottom: 15%;
+    justify-content: space-around;
+    background: #fff;
+
         .first-sec-in {
-            
+            position: relative;
+
             h1 {
-                font-size: 70px;
+                font-size: 75px;
+                font-family: Recoleta, 'Nunito sans', sans-serif;
                 color: #201047;
-                margin-top: 15%;
-                font-family: 'Manrope', sans-serif;
-                font-weight: bold;
-                line-height: 1.5;
-                width: 125%;
-                 font-feature-settings: 'liga' off;
+                margin-top: 10%;
+                width: 120%;
+                position: relative;
+                z-index: 3;
             }
 
             button {
-                background-color: #201047;
-                border-radius: 8px;
-                border: none;
-                color: #fff;
-                padding: 3% 6%;
-                margin-top: 3%;
+                padding:  3% 7%;
+                font-weight: 600;
                 font-size: 20px;
+                font-family: matter, 'Nunito sans', sans-serif;
+                margin-top: 10%;
+                border: none;
+                border-radius: 8px;
+                background: #201047;
+                color: #fff;
                 outline: none;
             }
 
             button:hover {
-                color: #201047;
-                background-color: #f5f5f5;
-                opacity: 0.8;
-                font-weight: 700;
-                text-shadow: 0px 1px 0px #E5E9F2;
-            }
-        }
-
-        .second-sec-in {
-            .files-svg {
-                position: relative;
-                z-index: -1;
-                
+                color:  #201047;
+                background: #f4f4f4;
             }
 
             .dot-svg {
-                position: relative;
-                left: -20%;
-                z-index: -1;
+                position: absolute;
+                bottom: 0;
+                right: 1%;
             }
-            .mobile {
-                display: none;
-            }
+
+        }
+
+        .second-sec-in {
+                width: 100%;
+                .files-svg {
+                 width: 100%;
+             }
+
+             .dot-svg-1 {
+                 display: none;
+             }
+
+             button {
+                 display: none;
+             }
         }
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1024px) {
     .first-sec {
-        height: 40vh;
-        margin-bottom: 0% !important;
         .first-sec-in {
-            h1 {
-                font-size: 64px;
-                width: 130%;
-            }
-        }
-        .second-sec-in {
-            .files-svg {
-                height: 400px;
-            }
+                h1 {
+                    font-size: 60px;
+                    width: 130%;
+                    line-height: 1.5;
+                }
         }
     }
 }
@@ -349,76 +354,71 @@ nav {
 @media screen and (max-width:768px) {
     .first-sec {
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        justify-items: center;
-        padding: 10%;
-        width: 100%;
-        height: 100vh;
 
-        .first-sec-in {
-                 h1 {
-                     align-self: center;
-                     font-size: 24px;
-                     width: 100%;
-                     font-weight: bold;
-                 }
-                 button {
-                     display: none;
-                 }
-        }
-    }
+            .first-sec-in {
 
-    .second-sec-in {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        justify-items: center;
-        .files-svg {
-            margin-top: 10%;
-            height: 300px !important;
-            display: block;
-        }
+                h1 {
+                    font-weight: 900;
+                    font-size: 24px;
+                    width: 100%;
+                }
 
-        .dot-svg {
-            position: absolute;
-            margin-left: -40%;
-            height: 50px;
-        }
+                button {
+                    display: none;
+                }
 
-        .mobile {
-            background-color: #201047;
-            border-radius: 8px;
-            border: none;
-            color: #fff;
-            padding: 3% 7%;
-            margin-top: 4%;
-            font-size: 16px;
-            outline: none;
-            display: block !important;
-            align-self: center;
-        }
+                .dot-svg {
+                    display: none;
+                }
+            }
 
-        .mobile:hover {
-            color: #201047;
-            background-color: #f5f5f5;
-            opacity: 0.8;
-            font-weight: 700;
-            text-shadow: 0px 1px 0px #E5E9F2;
-        }
-    }
+            .second-sec-in {
+                width: 100%;
+                position: relative;
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
 
+                .files-svg {
+                    width: 100%;
+                    // margin-top: 10%;
+                    z-index: 1 !important;
+                }
+
+                .dot-svg-1 {
+                     display: block !important;
+                     position: absolute;
+                     left: 0;
+                     bottom: 10%;
+                     height: 10%;
+                     z-index: 1 !important;
+                }
+
+                button {
+                    padding:  3% 7%;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: matter, 'Nunito sans', sans-serif;
+                    margin-top: 10%;
+                    border: none;
+                    border-radius: 8px;
+                    background: #201047;
+                    color: #fff;
+                    outline: none;
+                    display: block;
+                    width: 50%;
+                    align-self: center;
+                    margin-top: 10%;
+                }
     
-}
-
-@media screen and (max-width:320px) {
-    .second-sec-in {
-        .files-svg {
-            height: 250px !important;
-        }
+                button:hover {
+                    color:  #201047;
+                    background: #f4f4f4;
+                }
+            }
     }
 }
+
 
 .second-sec {
     display: flex;
@@ -494,7 +494,6 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 10% !important;
         height: 100vh;
 
             .second-sec-div1 {
@@ -534,11 +533,19 @@ nav {
 
 
 @media screen and (max-width:540px) {
-    .flower-img {
-        right: -8% !important;
-         bottom: -8% !important;
-         height: 70px;
+   .second-sec {
+
+    .second-sec-div2 {
+            div {
+
+                .flower-img {
+                    right: -10% !important;
+                     bottom: -10% !important;
+                     height: 70px;
+                }
+            }
     }
+   }
 }
 
 @media screen and (max-width:320px) {
@@ -813,7 +820,7 @@ nav {
         .third-sec-in {
             
             div {
-                width: 50%;
+                width: 23% !important;
                 align-self: center;
                 h3 {
                     text-align: center;
@@ -829,7 +836,7 @@ nav {
 
 @media screen and (max-width:768px)  {
     .third-sec {
-        margin-top: 0 !important;
+        margin-top: 5% !important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -867,7 +874,7 @@ nav {
 
 @media screen and (max-width:320px) {
     .third-sec {
-        margin-top: 10% !important;
+        margin-top: 20% !important;
 
         .third-sec-in {
             div {
@@ -1540,6 +1547,18 @@ footer {
                     opacity: 0.8;
                 }
             }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+
+        .cc {
+
+            .cc-icons {
+                width: 20% ;
+            }
+        }
     }
 }
 
