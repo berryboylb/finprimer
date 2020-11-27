@@ -278,6 +278,10 @@ nav {
     margin-top: 100vh;
 }
 
+// section {
+//     overflow: hidden;
+// }
+
 .first-sec {
     padding: 5%;
     display: flex;
@@ -1228,6 +1232,7 @@ nav {
     flex-direction: column;
     padding: 5%;
     background: #201047;
+    overflow: visible !important;
 
     h1 {
         font-size: 48px;

@@ -1286,6 +1286,7 @@ nav {
           flex-direction: column;
   padding: 5%;
   background: #201047;
+  overflow: visible !important;
 }
 
 .fifth-sec h1 {
