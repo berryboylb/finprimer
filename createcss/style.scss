@@ -8,6 +8,7 @@ section {
     display: flex;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
         .div-1 {
             background: #201047;
@@ -48,6 +49,11 @@ section {
                  color: #fff;
                  outline: none;
                  border: none;
+                 width: 50%;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
              }
 
              button:hover {
@@ -59,7 +65,7 @@ section {
                  position: absolute;
                  right: 5%;
                  bottom: 5%;
-                 width: 10%;
+                 width: 20%;
                  display: flex;
                  justify-content: space-between;
 
@@ -393,6 +399,8 @@ section {
 
         .div-1 {
             height: 50vh;
+
+            
         }
 
         .div-2 {

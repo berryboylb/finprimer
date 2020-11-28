@@ -8,6 +8,7 @@ section {
     display: flex;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 
         .div-1 {
             background: #fff;
@@ -301,6 +302,11 @@ section {
                 outline: none;
                 border: none;
                 margin-top: 0%;
+                width: 80%;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
             }
 
             button:hover {
@@ -343,6 +349,17 @@ section {
 
         .div-1 {
             height: 50vh;
+
+            form {
+                 
+                #submit {
+                     z-index: 3;
+                }
+
+                .log {
+                     z-index: 3;
+                }
+            }
         }
 
         .div-2 {
