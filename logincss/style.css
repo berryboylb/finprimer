@@ -11,6 +11,7 @@ section {
   display: flex;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 section .div-1 {
@@ -385,6 +386,12 @@ section .div-2 button {
   outline: none;
   border: none;
   margin-top: 0%;
+  width: 80%;
+}
+
+section .div-2 button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 section .div-2 button:hover {
@@ -434,6 +441,12 @@ section .div-2 .bad-plant {
   }
   section .div-1 {
     height: 50vh;
+  }
+  section .div-1 form #submit {
+    z-index: 3;
+  }
+  section .div-1 form .log {
+    z-index: 3;
   }
   section .div-2 {
     height: 50vh;
