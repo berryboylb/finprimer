@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -328,7 +343,7 @@ nav {
 
 .first-sec .first-sec-in h1 {
   font-size: 75px;
-  font-family: Recoleta, 'Nunito sans', sans-serif;
+  font-family: 'recoletaregular_demo';
   color: #201047;
   margin-top: 10%;
   width: 120%;
@@ -340,7 +355,7 @@ nav {
   padding: 3% 7%;
   font-weight: 600;
   font-size: 20px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   margin-top: 10%;
   border: none;
   border-radius: 8px;
@@ -430,7 +445,7 @@ nav {
     padding: 3% 7%;
     font-weight: 600;
     font-size: 16px;
-    font-family: matter, 'Nunito sans', sans-serif;
+    font-family: 'Matter';
     margin-top: 10%;
     border: none;
     border-radius: 8px;
@@ -491,7 +506,7 @@ nav {
 .second-sec .second-sec-div2 div h3 {
   font-size: 32px;
   color: #F2780B;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   margin-bottom: 3%;
 }
 
@@ -499,7 +514,7 @@ nav {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 3%;
-  font-family: Recoleta, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   color: #573F7B;
 }
 
@@ -603,7 +618,7 @@ nav {
 
 .third-sec h2 {
   text-align: center;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   color: #201047;
   font-size: 32px;
   -webkit-font-feature-settings: 'liga' off;
@@ -649,7 +664,7 @@ nav {
 }
 
 .third-sec .third-sec-in .third-sec-in1 h3 {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -658,7 +673,7 @@ nav {
 
 .third-sec .third-sec-in .third-sec-in1 p {
   text-align: center;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -681,7 +696,7 @@ nav {
   color: #FAFAFA;
   text-decoration: none;
   font-size: 14px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .third-sec .third-sec-in .third-sec-in1 a:hover {
@@ -725,7 +740,7 @@ nav {
 }
 
 .third-sec .third-sec-in .third-sec-in2 h3 {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -734,7 +749,7 @@ nav {
 
 .third-sec .third-sec-in .third-sec-in2 p {
   text-align: center;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -751,7 +766,7 @@ nav {
   color: #FAFAFA;
   text-decoration: none;
   font-size: 14px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .third-sec .third-sec-in .third-sec-in2 a:hover {
@@ -795,7 +810,7 @@ nav {
 }
 
 .third-sec .third-sec-in .third-sec-in3 h3 {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -804,7 +819,7 @@ nav {
 
 .third-sec .third-sec-in .third-sec-in3 p {
   text-align: center;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -821,7 +836,7 @@ nav {
   color: #FAFAFA;
   text-decoration: none;
   font-size: 14px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .third-sec .third-sec-in .third-sec-in3 a:hover {
@@ -859,7 +874,7 @@ nav {
 }
 
 .third-sec .third-sec-in h3 {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -868,7 +883,7 @@ nav {
 
 .third-sec .third-sec-in p {
   text-align: center;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -891,7 +906,7 @@ nav {
   color: #FAFAFA;
   text-decoration: none;
   font-size: 14px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .third-sec .third-sec-in a:hover {
@@ -936,7 +951,7 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 10%;
-    margin-top: -15% !important;
+    margin-top: -20% !important;
   }
   .third-sec h2 {
     font-weight: bold;
@@ -976,7 +991,7 @@ nav {
 
 @media screen and (max-width: 320px) {
   .third-sec {
-    margin-top: -15% !important;
+    margin-top: -20% !important;
   }
   .third-sec .third-sec-in div {
     margin-left: 3%;
@@ -1004,7 +1019,7 @@ nav {
   color: #201047;
   position: absolute;
   top: 2%;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
 }
 
 .fourth-sec .fourth-sec-1 {
@@ -1025,7 +1040,7 @@ nav {
   font-weight: normal;
   font-size: 16px;
   color: #666666;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   z-index: 9;
 }
 
@@ -1034,7 +1049,7 @@ nav {
   font-weight: 600;
   font-size: 18px;
   color: #201047;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   margin-top: 5%;
   letter-spacing: 3px;
 }
@@ -1046,7 +1061,7 @@ nav {
   font-size: 12px;
   margin-top: 3%;
   letter-spacing: 3px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .fourth-sec .fourth-sec-1 img {
@@ -1080,7 +1095,7 @@ nav {
   font-weight: normal;
   font-size: 16px;
   color: #666666;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   z-index: 9;
 }
 
@@ -1089,7 +1104,7 @@ nav {
   font-weight: 600;
   font-size: 18px;
   color: #201047;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   margin-top: 5%;
   letter-spacing: 3px;
 }
@@ -1101,7 +1116,7 @@ nav {
   font-size: 12px;
   margin-top: 3%;
   letter-spacing: 3px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .fourth-sec .fourth-sec-2 img {
@@ -1142,7 +1157,7 @@ nav {
   font-weight: normal;
   font-size: 16px;
   color: #666666;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   z-index: 9;
 }
 
@@ -1151,7 +1166,7 @@ nav {
   font-weight: 600;
   font-size: 18px;
   color: #201047;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   margin-top: 5%;
   letter-spacing: 3px;
 }
@@ -1163,7 +1178,7 @@ nav {
   font-size: 12px;
   margin-top: 3%;
   letter-spacing: 3px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .fourth-sec .fourth-sec-3 img {
@@ -1539,7 +1554,7 @@ nav {
       -ms-grid-row-align: center;
       align-self: center;
   width: 60%;
-  font-family: 'Recoleta', 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   z-index: 2;
 }
 
@@ -1555,7 +1570,7 @@ nav {
   margin-top: 3%;
   font-size: 20px;
   outline: none;
-  font-family: 'Recoleta', 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
 }
 
 .fifth-sec button:hover {
@@ -1582,7 +1597,7 @@ nav {
 .fifth-sec .fifth-sec-in p {
   font-size: 14px;
   color: #fff;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   letter-spacing: 3px;
 }
 
@@ -1664,7 +1679,7 @@ nav {
   font-weight: bold;
   font-size: 32px;
   color: #201047;
-  font-family: 'Recoleta', 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
 }
 
 .sixth-sec .sixth-sec-2 form #email {
@@ -1678,25 +1693,25 @@ nav {
 .sixth-sec .sixth-sec-2 form #email::-webkit-input-placeholder {
   color: #AEA79F;
   font-size: 16px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .sixth-sec .sixth-sec-2 form #email:-ms-input-placeholder {
   color: #AEA79F;
   font-size: 16px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .sixth-sec .sixth-sec-2 form #email::-ms-input-placeholder {
   color: #AEA79F;
   font-size: 16px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .sixth-sec .sixth-sec-2 form #email::placeholder {
   color: #AEA79F;
   font-size: 16px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .sixth-sec .sixth-sec-2 form #email:focus {
@@ -1713,7 +1728,7 @@ nav {
   color: #FFFFFF;
   border-radius: 10px;
   outline: none;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 .sixth-sec .sixth-sec-2 form #submit:hover {
@@ -1813,7 +1828,7 @@ footer .footer-in-1 .footer-list-item {
 footer .footer-in-1 .footer-list-item div h3 {
   font-size: 20px;
   margin-bottom: 10%;
-  font-family: 'Recoleta', 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   color: #fff;
   letter-spacing: 3px;
 }
@@ -1827,7 +1842,7 @@ footer .footer-in-1 .footer-list-item div p a {
   font-size: 16px;
   text-decoration: none;
   color: #fff;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   position: relative;
 }
 

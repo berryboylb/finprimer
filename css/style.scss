@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Matter';
+    src: url('matter/Matter-Light.eot');
+    src: local('matter/Matter Light'), local('Matter-Light'),
+        url('matter/Matter-Light.eot?#iefix') format('embedded-opentype'),
+        url('matter/Matter-Light.woff2') format('woff2'),
+        url('matter/Matter-Light.woff') format('woff'),
+        url('matter/Matter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -295,7 +318,7 @@ nav {
 
             h1 {
                 font-size: 75px;
-                font-family: Recoleta, 'Nunito sans', sans-serif;
+                font-family: 'recoletaregular_demo';
                 color: #201047;
                 margin-top: 10%;
                 width: 120%;
@@ -307,7 +330,7 @@ nav {
                 padding:  3% 7%;
                 font-weight: 600;
                 font-size: 20px;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
                 margin-top: 10%;
                 border: none;
                 border-radius: 8px;
@@ -404,7 +427,7 @@ nav {
                     padding:  3% 7%;
                     font-weight: 600;
                     font-size: 16px;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                     margin-top: 10%;
                     border: none;
                     border-radius: 8px;
@@ -451,14 +474,14 @@ nav {
                         h3 {
                             font-size: 32px;
                             color: #F2780B;
-                            font-family: Recoleta, 'Manrope', sans-serif;
+                            font-family: 'recoletaregular_demo';
                             margin-bottom: 3%;
                         }
                         p {
                             font-size: 18px;
                             line-height: 2;
                             margin-bottom: 3%;
-                            font-family: Recoleta, 'Nunito sans', sans-serif;
+                            font-family: 'Matter';
                             color: #573F7B;
                         }
 
@@ -576,7 +599,7 @@ nav {
     overflow: hidden;
         h2 {
             text-align: center;
-            font-family: Recoleta, 'Manrope', sans-serif;
+            font-family: 'recoletaregular_demo';
             color: #201047;
             font-size: 32px;
             font-feature-settings: 'liga' off;
@@ -605,7 +628,7 @@ nav {
                 }
 
                 h3 {
-                    font-family: Recoleta, 'Manrope', sans-serif;
+                    font-family: 'recoletaregular_demo';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -614,7 +637,7 @@ nav {
 
             p {
                 text-align: center;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
@@ -638,7 +661,7 @@ nav {
                 color: #FAFAFA;
                 text-decoration: none;
                 font-size: 14px;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
             }
 
             a:hover {
@@ -672,7 +695,7 @@ nav {
                 margin-bottom: 5%;
             }
             h3 {
-                font-family: Recoleta, 'Manrope', sans-serif;
+                font-family: 'recoletaregular_demo';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -680,7 +703,7 @@ nav {
             }
             p {
                 text-align: center;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
@@ -697,7 +720,7 @@ nav {
                 color: #FAFAFA;
                 text-decoration: none;
                 font-size: 14px;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
             }
 
             a:hover {
@@ -731,7 +754,7 @@ nav {
             }
 
             h3 {
-                font-family: Recoleta, 'Manrope', sans-serif;
+                font-family: 'recoletaregular_demo';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -740,7 +763,7 @@ nav {
 
             p {
                 text-align: center;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
@@ -757,7 +780,7 @@ nav {
                 color: #FAFAFA;
                 text-decoration: none;
                 font-size: 14px;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
             }
 
             a:hover {
@@ -786,7 +809,7 @@ nav {
         }
 
         h3 {
-            font-family: Recoleta, 'Manrope', sans-serif;
+            font-family: 'recoletaregular_demo';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
@@ -795,7 +818,7 @@ nav {
 
         p {
             text-align: center;
-            font-family: matter, 'Nunito sans', sans-serif;
+            font-family: 'Matter';
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -818,7 +841,7 @@ nav {
             color: #FAFAFA;
             text-decoration: none;
             font-size: 14px;
-            font-family: matter, 'Nunito sans', sans-serif;
+            font-family: 'Matter';
         }
 
         a:hover {
@@ -858,7 +881,7 @@ nav {
         align-items: center;
         justify-content: center;
         padding: 10%;
-        margin-top: -15% !important;
+        margin-top: -20% !important;
          h2 {
             font-weight: bold;
             font-size: 16px;
@@ -891,7 +914,7 @@ nav {
 
 @media screen and (max-width:320px) {
     .third-sec {
-        margin-top: -15% !important;
+        margin-top: -20% !important;
 
         .third-sec-in {
             div {
@@ -923,7 +946,7 @@ nav {
             color: #201047;
             position: absolute;
             top: 2%;
-            font-family: Recoleta, 'Manrope', sans-serif;
+            font-family: 'recoletaregular_demo';
         }
 
         .fourth-sec-1 {
@@ -941,7 +964,7 @@ nav {
                     font-weight: normal;
                     font-size: 16px;
                     color: #666666;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                     z-index: 9;
                 }
 
@@ -950,7 +973,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: Recoleta, 'Manrope', sans-serif;
+                    font-family: 'recoletaregular_demo';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -962,7 +985,7 @@ nav {
                     font-size: 12px;
                     margin-top: 3%;
                     letter-spacing: 3px;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                 }
 
                 img {
@@ -993,7 +1016,7 @@ nav {
                     font-weight: normal;
                     font-size: 16px;
                     color: #666666;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                     z-index: 9;
                 }
 
@@ -1002,7 +1025,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: Recoleta, 'Manrope', sans-serif;
+                    font-family: 'recoletaregular_demo';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -1014,7 +1037,7 @@ nav {
                     font-size: 12px;
                     margin-top: 3%;
                     letter-spacing: 3px;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                 }
 
                 img {
@@ -1053,7 +1076,7 @@ nav {
                     font-weight: normal;
                     font-size: 16px;
                     color: #666666;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                     z-index: 9;
                 }
 
@@ -1062,7 +1085,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: Recoleta, 'Manrope', sans-serif;
+                    font-family: 'recoletaregular_demo';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -1074,7 +1097,7 @@ nav {
                     font-size: 12px;
                     margin-top: 3%;
                     letter-spacing: 3px;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                 }
 
                 img {
@@ -1532,7 +1555,7 @@ nav {
         text-align: center;
         align-self: center;
         width: 60%;
-        font-family: 'Recoleta', 'Manrope', sans-serif;
+        font-family: 'recoletaregular_demo';
         z-index: 2;
     }
 
@@ -1546,7 +1569,7 @@ nav {
         margin-top: 3%;
         font-size: 20px;
         outline: none;
-        font-family: 'Recoleta', 'Manrope', sans-serif;
+        font-family: 'recoletaregular_demo';
     }
 
     button:hover {
@@ -1567,7 +1590,7 @@ nav {
             p {
                 font-size: 14px;
                 color: #fff;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
                 letter-spacing: 3px;
             }
 
@@ -1637,7 +1660,7 @@ nav {
                 font-weight: bold;
                 font-size: 32px;
                 color: #201047;
-                font-family: 'Recoleta', 'Manrope', sans-serif;
+                font-family: 'recoletaregular_demo';
             }
 
             #email {
@@ -1650,7 +1673,7 @@ nav {
                 &::placeholder {
                     color: #AEA79F;
                     font-size: 16px;
-                    font-family: matter, 'Nunito sans', sans-serif;
+                    font-family: 'Matter';
                 }
 
                 &:focus {
@@ -1669,7 +1692,7 @@ nav {
                 color: #FFFFFF;
                 border-radius: 10px;
                 outline: none;
-                font-family: matter, 'Nunito sans', sans-serif;
+                font-family: 'Matter';
             }
 
             #submit:hover {
@@ -1755,7 +1778,7 @@ footer {
                     h3 {
                         font-size: 20px;
                         margin-bottom: 10%;
-                        font-family: 'Recoleta', 'Manrope', sans-serif;
+                        font-family: 'recoletaregular_demo';
                         color: #fff;
                         letter-spacing: 3px;
                     }
@@ -1768,7 +1791,7 @@ footer {
                         font-size: 16px;
                         text-decoration: none;
                         color: #fff;
-                        font-family: matter, 'Nunito sans', sans-serif;
+                        font-family: 'Matter';
                         position: relative;
                     }
 

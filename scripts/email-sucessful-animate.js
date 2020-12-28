@@ -1,6 +1,6 @@
 //we are just animating here
 
-let tl = gsap.timeline({defaults:{duration: 1.5}});
+let tl = gsap.timeline({defaults:{duration: 1.5, toggleActions: "none none none none"}});
 
 tl.from('.box', {scale: 2.5, opacity: 0, ease: 'elastic', duration: 2,} )
     .from('.logo', {x:300, opacity: 0, ease: 'bounce',}, "-=2.5")

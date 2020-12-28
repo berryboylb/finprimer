@@ -1,6 +1,6 @@
 //we are just animating here
 
-let tl = gsap.timeline({defaults:{duration: 1.5}});
+let tl = gsap.timeline({defaults:{duration: 1.5, toggleActions: "none none none none"}});
 
 tl.from('nav', {y:-100, opacity: 0, ease: 'bounce',})
     .from('nav ul li', {stagger: 0.1, opacity: 0})

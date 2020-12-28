@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -36,7 +51,7 @@ section .div-1 form h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   color: #573F7B;
 }
 
@@ -65,7 +80,7 @@ section .div-1 form .div-email label {
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   color: #AEA79F;
 }
 
@@ -123,7 +138,7 @@ section .div-1 form .div-pass .password {
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   color: #AEA79F;
 }
 
@@ -263,7 +278,7 @@ section .div-1 form .sign {
   margin-top: 2.5%;
   font-size: 16px;
   color: #737B7D;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   display: none;
 }
 
@@ -360,7 +375,7 @@ section .div-2 .logo {
 
 section .div-2 h3 {
   font-size: 48px;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   text-align: center;
   color: #FFFFFF;
   width: 70%;
