@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -43,7 +58,7 @@ section .div-1 .logo {
 
 section .div-1 h3 {
   font-size: 48px;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   text-align: center;
   color: #FFFFFF;
   width: 70%;
@@ -143,7 +158,7 @@ section .div-2 form {
 section .div-2 form h3 {
   font-size: 32px;
   color: #F2780B;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -175,7 +190,7 @@ section .div-2 form .name .first {
 }
 
 section .div-2 form .name .first label {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -225,7 +240,7 @@ section .div-2 form .name .last {
 }
 
 section .div-2 form .name .last label {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -282,7 +297,7 @@ section .div-2 form .div-email {
 }
 
 section .div-2 form .div-email label {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -340,7 +355,7 @@ section .div-2 form .div-pass {
 }
 
 section .div-2 form .div-pass label {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -406,7 +421,7 @@ section .div-2 form .div-con-pass {
 }
 
 section .div-2 form .div-con-pass label {
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -467,14 +482,14 @@ section .div-2 form #submit {
   color: #fff;
   border-radius: 8px;
   font-size: 16px;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
   outline: none;
   border: none;
 }
 
 section .div-2 form #submit:hover {
   color: #201047;
-  font-family: Recoleta, 'Manrope', sans-serif;
+  font-family: 'recoletaregular_demo';
   background: #f4f4f4;
 }
 
@@ -482,7 +497,7 @@ section .div-2 .sign {
   margin-top: 2.5%;
   font-size: 16px;
   color: #737B7D;
-  font-family: matter, 'Nunito sans', sans-serif;
+  font-family: 'Matter';
 }
 
 section .div-2 .sign span {
